@@ -12,5 +12,5 @@ while rep:
     if computador == escolha:
         defs.linha()
         print('Resultado do jogo')
-        print(f'Computador: {computador}\nVocê: {escolha}')
+        print(f'Computador: {computador}\nVocê: {escolha}\nEMPATE')
     
