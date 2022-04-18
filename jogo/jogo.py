@@ -9,4 +9,8 @@ while rep:
     print('Olá jogador, seja bem vindo ao jogo da velha')
     defs.linha()
     escolha = int(input('Faça sua escolha\n1 - Pedra\n2 - Papel\n3 - Tesoura\nEscolha: '))
+    if computador == escolha:
+        defs.linha()
+        print('Resultado do jogo')
+        print(f'Computador: {computador}\nVocê: {escolha}')
     
