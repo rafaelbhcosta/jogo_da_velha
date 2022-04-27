@@ -51,7 +51,7 @@ while rep:
             escolha = 'Pedra'
             computador = 'Papel'
             print('Resultado do jogo')
-            print(f'Computador: {computador}\nVocê: {escolha}\nVO cumputador venceu!!')
+            print(f'Computador: {computador}\nVocê: {escolha}\nO cumputador venceu!!')
 
         elif computador == 3 and escolha == 2:
             defs.linha()
