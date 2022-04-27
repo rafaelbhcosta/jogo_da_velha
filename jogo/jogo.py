@@ -41,13 +41,21 @@ while rep:
         #Vitórias do computador
         elif computador == 1 and escolha == 3:
             defs.linha()
+            escolha = 'Tesoura'
+            computador = 'Pedra'
             print('Resultado do jogo')
             print(f'Computador: {computador}\nVocê: {escolha}\nO cumputador venceu!!')
+
         elif computador == 2 and escolha == 1:
             defs.linha()
+            escolha = 'Pedra'
+            computador = 'Papel'
             print('Resultado do jogo')
             print(f'Computador: {computador}\nVocê: {escolha}\nVO cumputador venceu!!')
+
         elif computador == 3 and escolha == 2:
             defs.linha()
+            escolha = 'Papel'
+            computador = 'Tesoura'
             print('Resultado do jogo')
             print(f'Computador: {computador}\nVocê: {escolha}\nO cumputador venceu!!')
