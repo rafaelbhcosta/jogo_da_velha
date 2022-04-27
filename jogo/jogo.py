@@ -23,11 +23,14 @@ while rep:
             computador = 'Tesoura'
             print('Resultado do jogo')
             print(f'Computador: {computador}\nVocê: {escolha}\nVocê venceu!!')
-            
+
         elif escolha == 2 and computador == 1:
             defs.linha()
+            escolha = 'Papel'
+            computador = 'Pedra'
             print('Resultado do jogo')
             print(f'Computador: {computador}\nVocê: {escolha}\nVocê venceu!!')
+
         elif escolha == 3 and computador == 2:
             defs.linha()
             print('Resultado do jogo')
