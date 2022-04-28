@@ -11,7 +11,7 @@ abertura = True
 while abertura:
 
     # Isso é uma condição para a tela não travar, cria um periodo de recarga da tela
-    pygame.time.delay(50)
+    pygame.time.delay(25)
 
     # Essa função cria uma detecção de evento, no caso para parar a tela caso clique no X (sair)
     for event in pygame.event.get():
@@ -28,6 +28,7 @@ while abertura:
         x += velocidade
     if comandos[pygame.K_LEFT]:
         x -= velocidade
+          
 
     # Sempre que o evento FOR se repetir a tela atualiza o fundo dela para essa cor
     janela.fill((0,0,0))
