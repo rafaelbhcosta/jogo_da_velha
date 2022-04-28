@@ -18,16 +18,16 @@ while abertura:
         if event.type == pygame.QUIT:
             abertura = False
         
-        #comandos que determinam a movimentação do circulo
-        comandos = pygame.key.get_pressed()
-        if comandos[pygame.K_UP]:
-            y -= velocidade
-        if comandos[pygame.K_DOWN]:
-            y += velocidade
-        if comandos[pygame.K_RIGHT]:
-            x += velocidade
-        if comandos[pygame.K_LEFT]:
-            x -= velocidade
+    #comandos que determinam a movimentação do circulo
+    comandos = pygame.key.get_pressed()
+    if comandos[pygame.K_UP]:
+        y -= velocidade
+    if comandos[pygame.K_DOWN]:
+        y += velocidade
+    if comandos[pygame.K_RIGHT]:
+        x += velocidade
+    if comandos[pygame.K_LEFT]:
+        x -= velocidade
 
     # Sempre que o evento FOR se repetir a tela atualiza o fundo dela para essa cor
     janela.fill((0,0,0))
