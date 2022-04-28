@@ -1,4 +1,5 @@
 import pygame
+
 pygame.init()
 x = 400
 y = 300
@@ -7,13 +8,15 @@ velocidade = 10
 janela = pygame.display.set_mode((800,600))
 pygame.display.set_caption('Jokempo')
 
+ColorBack = { "azul":[0,132, 252], "vermelho":[137,28,36]} 
+
 abertura = True
 while abertura:
 
     # Isso é uma condição para a tela não travar, cria um periodo de recarga da tela
     pygame.time.delay(25)
 
-    # Essa função cria uma detecção de evento, no caso para parar a tela caso clique no X (sair)
+        # Essa função cria uma detecção de evento, no caso para parar a tela caso clique no X (sair)
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             abertura = False
@@ -21,6 +24,7 @@ while abertura:
     #comandos que determinam a movimentação do circulo
     comandos = pygame.key.get_pressed()
     if comandos[pygame.K_UP]:
+        janela.fill( ColorBack["vermelho"] )
         y -= velocidade
     if comandos[pygame.K_DOWN]:
         y += velocidade
