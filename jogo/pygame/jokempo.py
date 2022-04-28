@@ -8,7 +8,6 @@ velocidade = 10
 janela = pygame.display.set_mode((800,600))
 pygame.display.set_caption('Jokempo')
 
-ColorBack = { "azul":[0,132, 252], "vermelho":[137,28,36]} 
 
 abertura = True
 while abertura:
@@ -24,7 +23,6 @@ while abertura:
     #comandos que determinam a movimentação do circulo
     comandos = pygame.key.get_pressed()
     if comandos[pygame.K_UP]:
-        janela.fill( ColorBack["vermelho"] )
         y -= velocidade
     if comandos[pygame.K_DOWN]:
         y += velocidade
