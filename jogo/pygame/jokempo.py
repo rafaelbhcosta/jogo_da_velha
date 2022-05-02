@@ -15,7 +15,7 @@ while abertura:
     # Isso é uma condição para a tela não travar, cria um periodo de recarga da tela
     pygame.time.delay(25)
 
-        # Essa função cria uma detecção de evento, no caso para parar a tela caso clique no X (sair)
+    # Essa função cria uma detecção de evento, no caso para parar a tela caso clique no X (sair)
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             abertura = False
@@ -40,3 +40,14 @@ while abertura:
     pygame.display.update()
 
 pygame.quit
+
+
+#    //        \\
+#   //          \\
+#  //            \\
+# //              \\
+# \\              //
+#  \\            //
+#   \\          //
+#    \\        //
+    
