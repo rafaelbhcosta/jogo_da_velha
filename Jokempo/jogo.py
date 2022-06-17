@@ -13,7 +13,7 @@ while rep:
     if computador == escolha:
         defs.linha()
         print('Resultado do jogo')
-        print(f'Computador: {computador}\nVocê: {escolha}\nEMPATE')
+        print(f'Computador: {computador}\nVocê: {escolha}\n\033[0;33mEMPATE\33[m')
     
     else:
         #Vitórias do jogador
@@ -22,21 +22,21 @@ while rep:
             escolha = 'Pedra'
             computador = 'Tesoura'
             print('Resultado do jogo')
-            print(f'Computador: {computador}\nVocê: {escolha}\nVocê venceu!!')
+            print(f'Computador: {computador}\nVocê: {escolha}\n\033[0;32mVocê venceu!!\33[m')
 
         elif escolha == 2 and computador == 1:
             defs.linha()
             escolha = 'Papel'
             computador = 'Pedra'
             print('Resultado do jogo')
-            print(f'Computador: {computador}\nVocê: {escolha}\nVocê venceu!!')
+            print(f'Computador: {computador}\nVocê: {escolha}\n\033[0;32mVocê venceu!!\33[m')
 
         elif escolha == 3 and computador == 2:
             defs.linha()
             escolha = 'Tesoura'
             computador = 'Papel'
             print('Resultado do jogo')
-            print(f'Computador: {computador}\nVocê: {escolha}\nVocê venceu!!')
+            print(f'Computador: {computador}\nVocê: {escolha}\n\033[0;31mVocê venceu!!\33[m')
 
         #Vitórias do computador
         elif computador == 1 and escolha == 3:
@@ -44,18 +44,18 @@ while rep:
             escolha = 'Tesoura'
             computador = 'Pedra'
             print('Resultado do jogo')
-            print(f'Computador: {computador}\nVocê: {escolha}\nO cumputador venceu!!')
+            print(f'Computador: {computador}\nVocê: {escolha}\n\033[0;31mO cumputador venceu!!\33[m')
 
         elif computador == 2 and escolha == 1:
             defs.linha()
             escolha = 'Pedra'
             computador = 'Papel'
             print('Resultado do jogo')
-            print(f'Computador: {computador}\nVocê: {escolha}\nO cumputador venceu!!')
+            print(f'Computador: {computador}\nVocê: {escolha}\n\033[0;31mO cumputador venceu!!\33[m')
 
         elif computador == 3 and escolha == 2:
             defs.linha()
             escolha = 'Papel'
             computador = 'Tesoura'
             print('Resultado do jogo')
-            print(f'Computador: {computador}\nVocê: {escolha}\nO cumputador venceu!!')
+            print(f'Computador: {computador}\nVocê: {escolha}\n\033[0;31mO cumputador venceu!!\33[m')
